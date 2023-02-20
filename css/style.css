@@ -1,0 +1,71 @@
+/* reset */
+html{
+    /* formater la taile standard de la police de caractères */
+    font-size: 62.5%; /* 16 * 62.5% = 10.000 */
+}
+body{
+    font: 1.6rem sans-serif; /* serif */
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    background-color: var(--bgcolor-primary-ff); /* fond arrière-plan */
+    color: var(--bgcolor-default-text); /* couleur du texte */
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{ /* contexte css */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #6e65ec;
+}
+*{
+  box-sizing: border-box;  
+}
+/* unité de mesure em, rem, px, ch, vw, vh */
+/* 
+theme css variables 
+*/
+:root{
+    --bgcolor-primary-ff: #2b2a33;
+    --bgcolor-secodary-ff: #42414d;
+    --bgcolor-logo-ff: #ff4a3a;
+    --bgcolor-default-text: #fff;
+    --color-section-title: #74b9ff;
+    --color-article-title: #fdcb6e;
+
+}
+header h1{
+    font-weight: normal;
+    text-align: center;
+    line-height: 7.0rem;
+}
+header h1 strong{
+    color: var(--bgcolor-logo-ff);
+    text-transform:uppercase;
+    font-weight:lighter;
+    font-size: xx-large;
+}
+article, section{ /* contexte css */
+    max-width: 90rem;
+    border: solid .1rem var(--bgcolor-default-text);
+    margin: 0 auto 1rem;
+    background-color: var(--bgcolor-secodary-ff);
+    padding: 1rem;
+}
+article h2{
+    color: var(--color-article-title);
+}
+section h2{
+    color: var(--color-section-title);
+}
+section ol li a{
+    color: var(--bgcolor-logo-ff);
+}
+footer{
+    padding: 1rem 0;
+}
+footer p{
+    text-align: center;
+}
