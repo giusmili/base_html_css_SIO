@@ -21,6 +21,13 @@
             </h1>
         </header>
         <!-- contenu complémentaire -->
+        <section class="desappear" id="content">
+            <h2>Bonjour</h2>
+        </section>
+        <section class="desappear" id="message">
+            <h2>Hello </h2>
+        </section>
+       
         <aside> 
             <img 
                 src="./asset/XFDIcG6.png" 
@@ -34,7 +41,8 @@
             <!-- content > titre + texte -->
             <article>
                 <h2>HP 15s-eq2065nf</h2>
-                <p>
+                <p> 
+                    <span aria-hidden="true">&#128161;</span>
                     <strong>
                         Windows 11 Famille &amp; pro
                     </strong>
@@ -51,6 +59,7 @@
                 <h2>HP 15s-eq2065nf</h2>
                 <ol>
                     <li>
+                        <span aria-hidden="true">&#128269;</span>
                         <strong>Windows 11 Famille</strong>
                     </li>
                     <li>
@@ -69,9 +78,18 @@
                         x 1080), 250 nits, 45% NTSC
                     </li>
                     <li>
-                        Carte graphique AMD Radeon™ : 
+                        Carte graphique AMD Radeon™
                         <br>
-                        <a href="#">Ma boutique online</a>
+                        <a href="#" 
+                        class="button button-primary">
+                        <span aria-hidden="true">&#128179;</span>
+                        boutique online
+                        </a>
+                        <button 
+                            class="button button-alert" 
+                            aria-label="supprimer">
+                            &times; Supprimer
+                        </button>
                     </li>
                 </ol>
             </section>
@@ -81,5 +99,6 @@
                 &copy; - HTML<sup>5</sup> - <time datetime="2023-01-30">2023</time>
             </p>
         </footer>
+        <!-- <script src="js/app.js"></script> -->
     </body>
 </html>
